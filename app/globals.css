@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: inter;
+  src: url(inter.woff2) format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --static: red;
+}
+
+body {
+  font-family: inter, sans-serif;
+}
+
+@layer utilities {
+  .static-red {
+    color: var(--static);
+  }
+}
